@@ -1,8 +1,8 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import {
-    IconGitHub,
-} from '@components/icons';
+// import {
+//     IconGitHub,
+// } from '@components/icons';
 
 const Icon = ({ name }) => {
     switch (name) {

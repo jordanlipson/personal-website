@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         width: 100%;
-        // scroll-behavior: smooth;
+        background-color: #F5F0E7;
     }
 
 `;
