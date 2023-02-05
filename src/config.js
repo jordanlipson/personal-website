@@ -16,6 +16,21 @@ module.exports = {
         },
     ],
 
+    navLinks: [
+        {
+            name: 'Work',
+            url: '/#work',
+        },
+        {
+            name: 'About',
+            url: '/#about',
+        },
+        {
+            name: 'Contact',
+            url: '/#contact',
+        }
+    ],
+
     colors: {
         green: '#0a5029',
     },

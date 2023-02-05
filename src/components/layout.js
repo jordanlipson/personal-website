@@ -4,9 +4,14 @@ import { GlobalStyle } from "../styles/index";
 
 const Layout = () => {
     return (
-        <div id='root'>
-            <GlobalStyle />
-        </div>
+        <>
+            {/* <Head /> */}
+
+            <div id='root'>
+                <GlobalStyle />
+            </div>
+
+        </>
     )
 };
 

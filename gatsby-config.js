@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Jordan Lipson`,
-    siteUrl: `https://www.yourdomain.tld`,
-    //siteUrl: 'https://lipson.design',
+    description: 'Jordan Lipson is a product designer (and developer) passionate about creating beautiful and accessible digital interfaces.',
+    // siteUrl: `https://www.yourdomain.tld`,
+    // image:
+    siteUrl: 'https://lipson.design',
   },
   plugins: [],
 }
