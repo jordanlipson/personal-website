@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
         background-color: #F5F0E7;
     }
 
+    .section-header {
+        font-size: clamp(40px, 5vw, 60px);
+    }
+
 `;
 
 export default GlobalStyle;

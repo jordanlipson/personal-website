@@ -32,14 +32,14 @@ const About = () => {
         'Practicing my languages, or learning new ones',
         'Pulling all-nighters at hackathons',
         'Listening to podcasts',
-        'Reading in a cafe',
+        'Reading a Stephen King novel in a cafe',
         'Spending all my money in plant stores',
-        'Planning my next trip abroad'
+        'Planning my next adventure abroad'
     ]
 
     return (
         <StyledAboutSection id='about'>
-            <h3 id='section-header'>Nice to meet you!</h3>
+            <h3 className='section-header'>Nice to meet you!</h3>
 
             <div className='inner'>
                 <StyledText>
