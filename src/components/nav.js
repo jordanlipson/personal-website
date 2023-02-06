@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { navLinks } from '../config'
 
 const StyledHeader = styled.header`
@@ -8,6 +8,9 @@ const StyledHeader = styled.header`
     top: 0;
     // z-index: 1;
     padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     pointer-events: auto !important;
     user-select: auto !important;
@@ -42,6 +45,11 @@ const StyledLinks = styled.div`
         li {
             margin: 0 5px;
             position: relative;
+            display: inline;
+        }
+
+        li:not(:last-child) {
+            margin-right: 60px;
         }
 
         a {
@@ -72,7 +80,6 @@ const Nav = () => {
                             ))}
                         <li>{ResumeLink}</li>
                     </ul>
-                    {/* <div>{ResumeLink}</div> */}
                 </StyledLinks>
             </StyledNav>
         </StyledHeader>

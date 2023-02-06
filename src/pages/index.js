@@ -6,6 +6,9 @@ const IndexPage = () => {
   return (
     <Layout >
       <Hero />
+      <Work />
+      <About />
+      <Contact />
     </Layout>
   )
 }
