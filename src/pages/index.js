@@ -1,14 +1,12 @@
 import * as React from "react"
 import PropTypes from 'prop-types';
-import { Layout, Nav, Hero, Work, About, Contact } from '../components';
-import { GlobalStyle } from "../styles";
+import { Layout, Hero, Work, About, Contact } from '../components';
 
 const IndexPage = () => {
   return (
-    <>
-      <GlobalStyle />
+    <Layout >
       <Hero />
-    </>
+    </Layout>
   )
 }
 
