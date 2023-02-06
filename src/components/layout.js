@@ -5,9 +5,9 @@ import { Nav } from './index'
 import { GlobalStyle } from "../styles/index";
 
 const StyledContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 `;
 
 const Layout = ({ children, location }) => {

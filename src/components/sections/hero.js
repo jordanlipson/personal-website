@@ -2,6 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledHeroSection = styled.section`
+    
+
     h1 {
         color: #0A5029;
     }
