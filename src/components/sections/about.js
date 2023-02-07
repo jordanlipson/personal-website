@@ -17,10 +17,7 @@ const StyledAboutSection = styled.section`
 `;
 
 const StyledText = styled.div`
-    ul.interests-list {
-        list-style: none;
 
-    }
 `;
 
 const StyledPic = styled.div`
@@ -33,7 +30,7 @@ const About = () => {
         'Pulling all-nighters at hackathons',
         'Listening to podcasts',
         'Reading a Stephen King novel in a cafe',
-        'Spending all my money in plant stores',
+        'Watering my plants',
         'Planning my next adventure abroad'
     ]
 
@@ -62,7 +59,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <ul className='interests-list'>
+                    <ul>
                         {interests && interests.map((interest, i) => <li key={i}>{interest}</li>)}
                     </ul>
                 </StyledText>

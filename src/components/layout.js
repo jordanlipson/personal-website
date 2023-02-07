@@ -10,7 +10,7 @@ const StyledContent = styled.div`
     min-height: 100vh;
 `;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
     // const isHome = location.pathname === '/';
 
     return (
@@ -35,7 +35,7 @@ const Layout = ({ children, location }) => {
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
-    location: PropTypes.object.isRequired,
+    // location: PropTypes.object.isRequired,
 };
 
 export default Layout;

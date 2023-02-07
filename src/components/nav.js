@@ -6,8 +6,8 @@ import { navLinks } from '../config'
 const StyledHeader = styled.header`
     position: fixed;
     top: 0;
+    padding: 2em 2em;
     // z-index: 1;
-    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
     user-select: auto !important;
 
     @media (max-width: 1080px) {
-        padding: 0 40px;
+        padding: 2em 2em;
     }
     @media (max-width: 768px) {
         padding: 0 25px;
@@ -40,7 +40,6 @@ const StyledLinks = styled.div`
     ul {
         padding: 0;
         margin: 0;
-        list-style: none;
 
         li {
             margin: 0 5px;
@@ -54,7 +53,6 @@ const StyledLinks = styled.div`
 
         a {
             padding: 10px;
-            text-decoration: none;
             color: #0A5029;
         }
     }
@@ -70,7 +68,7 @@ const Nav = () => {
     return (
         <StyledHeader>
             <StyledNav>
-                <StyledLinks>
+                <StyledLinks className='nav-links'>
                     <ul>
                         {navLinks &&
                             navLinks.map(({ url, name }, i) => (
