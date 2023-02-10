@@ -26,7 +26,7 @@ const Contact = () => {
                 <ul>
                     {socialMedia && socialMedia.map(({ name, url }, i) => (
                         <li key={i}>
-                            <a href={url}>{name}</a>
+                            <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
                         </li>
                     ))}
                 </ul>

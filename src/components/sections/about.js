@@ -29,8 +29,8 @@ const About = () => {
         'Practicing my languages, or learning new ones',
         'Pulling all-nighters at hackathons',
         'Listening to podcasts',
-        'Reading a Stephen King novel in a cafe',
-        'Watering my plants',
+        'Reading in a cafe',
+        'Rewatching The Crown',
         'Planning my next adventure abroad'
     ]
 

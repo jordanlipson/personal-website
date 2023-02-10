@@ -1,17 +1,28 @@
 import { css } from "styled-components";
 
 // import font file
-import NewSpiritSemiboldWoff2 from '../fonts/NewSpiritTRIAL-SemiBold.woff2'
+import LausannePanRegular500Woff2 from '../fonts/TWKLausannePan-500.woff2';
+
+import TTRicordiGretoMediumttf from '../fonts/TT Ricordi Greto Trial Medium.ttf';
 
 // categorize by weight
-const newSpiritWeights = {
-    600: [NewSpiritSemiboldWoff2],
+const lausannePanNormalWeights = {
+    500: [LausannePanRegular500Woff2],
 };
 
+const ricordiGretoWeights = {
+    500: [TTRicordiGretoMediumttf],
+}
+
 // assign details (name, weight) to a var
-const newSpirit = {
-    name: 'New Spirit',
-    normal: newSpiritWeights,
+const lausannePan = {
+    name: 'Lausanne Pan',
+    normal: lausannePanNormalWeights,
+}
+
+const ricordiGreto = {
+    name: 'TT Ricordi Greto',
+    normal: ricordiGretoWeights,
 }
 
 // function to create font face
@@ -20,11 +31,13 @@ const createFontFaces = (family, style = 'normal') => {
 
     for (const [weight, formats] of Object.entries(family[style])) {
         const woff2 = formats[0];
+        const ttf = formats[1];
 
         styles += `
             @font-face {
                 font-family: '${family.name}';
-                src: url(${woff2}) format('woff2');
+                src: url(${woff2}) format('woff2'),
+                    url(${ttf}) format('ttf');
                 font-weight: ${weight};
                 font-style: ${style};
                 font-display: auto;
@@ -36,11 +49,12 @@ const createFontFaces = (family, style = 'normal') => {
 };
 
 // create font face for font
-const newSpiritNormal = createFontFaces(newSpirit)
+const lausannePanNormal = createFontFaces(lausannePan)
+const ricordiGretoNormal = createFontFaces(ricordiGreto)
 
 // Fonts component to be exported
 const Fonts = css`
-    ${newSpiritNormal}
+    ${lausannePanNormal + ricordiGretoNormal}
 `;
 
 export default Fonts;

@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
         background-color: #F5F0E7;
     }
 
+    * {
+        color: #0A5029;
+        font-family: 'Lausanne Pan';
+    }
+
     a {
         text-decoration: none;
     }
@@ -23,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-family: 'New Spirit';
+        // font-family: 'TT Ricordi Greto';
     }
 
     .section-header {
@@ -31,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .nav-links {
-        font-family: 'New Spirit';
+        
     }
 
 `;

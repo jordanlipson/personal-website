@@ -2,22 +2,36 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledHeroSection = styled.section`
+    padding-top: 7em;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-        height: auto;
-        // padding-top: var(--nav-height);
+    #content {
+        align-self: center;
     }
 
     h1 {
-        color: #0A5029;
-        font-size: 60px;
+        margin: 0px;
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    @media (max-height: 700px) and (min-width: 700px), (max-width: 768px) {
+        // height: auto;
+        padding-top: 2em;
+
+        h2 {
+            font-size: calc(16px + 16 * ((100vw - 600px) / 600));
+        }
     }
 `;
 
 const Hero = () => {
-    const messages = ["Hi", "Bonjour", "Hola", "Hallo", "Ciao"];
+    const messages = ["Hi, I'm", "Bonjour, je m'appelle", "Hallo, ich bin", "Hola, soy", "Ciao, sono"];
     // const scrollLink = (
     //     <a 
     //         className="work-link"
@@ -26,13 +40,14 @@ const Hero = () => {
     //     </a>
     // );
 
-    // const items = [one, two, three];
-
     return (
         <StyledHeroSection>
-            <h1>{messages[0]}</h1>
-            <h2>My name is Jordan Lipson.</h2>
-            <h2>I’m a product designer (& developer) passionate about creating beautiful and accessible digital interfaces.</h2>
+            <div id="content">
+                <h2>{messages[0]}</h2>
+                <h1>Jordan Lipson</h1>
+                <h2>[she/her]</h2>
+                <h2>I design (& develop) beautiful and accessible digital interfaces.</h2>
+            </div>
         </StyledHeroSection>
     );
 };
