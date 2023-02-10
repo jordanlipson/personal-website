@@ -17,14 +17,16 @@ const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+        // color: inherit;
+        // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        :hover {
+            color: #000;
+        }
     }
 
     ul {
         list-style: none;
-
-        a {
-            text-decoration: none;
-        }
     }
 
     h1 {
@@ -33,10 +35,6 @@ const GlobalStyle = createGlobalStyle`
 
     .section-header {
         font-size: clamp(40px, 5vw, 60px);
-    }
-
-    .nav-links {
-        
     }
 
 `;

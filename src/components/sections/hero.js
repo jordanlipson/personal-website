@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledHeroSection = styled.section`
-    padding-top: 7em;
+    padding-top: 8em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -13,7 +13,7 @@ const StyledHeroSection = styled.section`
 
     h1 {
         margin: 0px;
-        font-size: 10vw;
+        font-size: 9vw;
     }
 
     h2 {

@@ -7,11 +7,12 @@ const StyledHeader = styled.header`
     position: fixed;
     top: 0;
     padding: 2em 2em;
-    // z-index: 1;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color: #F5F0E7;
     pointer-events: auto !important;
     user-select: auto !important;
 
@@ -21,7 +22,6 @@ const StyledHeader = styled.header`
     @media (max-width: 768px) {
         padding: 0 25px;
     }
-
 `;
 
 const StyledNav = styled.nav`
