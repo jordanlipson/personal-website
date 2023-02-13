@@ -31,6 +31,10 @@ module.exports = {
         }
     ],
 
+    caseStudyLinks: [
+
+    ],
+
     colors: {
         green: '#0a5029',
     },

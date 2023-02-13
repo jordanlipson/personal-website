@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 const StyledHeroSection = styled.section`
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,6 +18,7 @@ const StyledHeroSection = styled.section`
     }
 
     h1 {
+        flex-wrap: wrap;
         margin: 0px;
         font-size: 9vw;
         letter-spacing: .1rem;
@@ -33,10 +34,17 @@ const StyledHeroSection = styled.section`
 
     @media (max-height: 700px) and (min-width: 700px), (max-width: 768px) {
         // height: auto;
-        padding-top: 2em;
+
+        #description-header {
+            margin-top: 4em;
+        }
+
+        h1 {
+            font-size: calc(90px + 40 * ((100vw - 600px) / 600));
+        }
 
         h2 {
-            font-size: calc(20px + 20 * ((100vw - 600px) / 600));
+            font-size: calc(30px + 30 * ((100vw - 600px) / 600));
         }
     }
 `;

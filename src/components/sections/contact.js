@@ -6,6 +6,18 @@ import styled from "styled-components";
 const StyledContactSection = styled.section`
     display: flex;
     flex-direction: column;
+
+    ul {
+        padding: 0px;
+
+        li {
+            display: inline;
+        }
+
+        li:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
 `
 
 const StyledSocialLinks = styled.div`
