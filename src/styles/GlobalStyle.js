@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
         // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         :hover {
-            color: #000;
+            color: #658F78;
         }
     }
 
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .section-header {
-        font-size: clamp(40px, 5vw, 60px);
+        font-size: clamp(15px, 3vw, 30px);
     }
 
 `;

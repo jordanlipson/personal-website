@@ -7,9 +7,14 @@ const StyledHeroSection = styled.section`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 2em;
 
     #hero {
         align-self: center;
+    }
+
+    #hero-center {
+        text-align: center;
     }
 
     h1 {
@@ -23,7 +28,7 @@ const StyledHeroSection = styled.section`
     }
     
     #description-header {
-        margin-top: 5em;
+        margin-top: 7em;
     }
 
     @media (max-height: 700px) and (min-width: 700px), (max-width: 768px) {
@@ -38,21 +43,15 @@ const StyledHeroSection = styled.section`
 
 const Hero = () => {
     const messages = ["Hi, I'm", "Bonjour, je m'appelle", "Hallo, ich bin", "Hola, soy", "Ciao, sono"];
-    // const scrollLink = (
-    //     <a 
-    //         className="work-link"
-    //         >
-    //         Scroll to see recent work
-    //     </a>
-    // );
 
     return (
         <StyledHeroSection>
             <div id="hero">
                 <h2>{messages[0]}</h2>
                 <h1>Jordan Lipson</h1>
-                <h2>[she/her]</h2>
-                <h2 id="description-header">I design (& develop) beautiful and accessible digital interfaces.</h2>
+                <div id="hero-center">
+                    <h2 id="description-header">I design (& develop) beautiful and accessible digital interfaces.</h2>
+                </div>
             </div>
         </StyledHeroSection>
     );

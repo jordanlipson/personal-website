@@ -45,6 +45,7 @@ const StyledLinks = styled.div`
             margin: 0 5px;
             position: relative;
             display: inline;
+            font-size: min(1.1em, 20px);
         }
 
         li:not(:last-child) {
@@ -52,7 +53,7 @@ const StyledLinks = styled.div`
         }
 
         a {
-            padding: 10px;
+            padding: 0.5vw;
             color: #0A5029;
         }
     }
@@ -70,6 +71,7 @@ const Nav = () => {
             <StyledNav>
                 <StyledLinks className='nav-links'>
                     <ul>
+                        <li><Link to='/'>LIPSON.DESIGN</Link></li> {/** Replace with proper logo */}
                         {navLinks &&
                             navLinks.map(({ url, name }, i) => (
                                 <li key={i}>

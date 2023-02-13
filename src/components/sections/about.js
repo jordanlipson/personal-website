@@ -30,7 +30,7 @@ const About = () => {
         'Pulling all-nighters at hackathons',
         'Listening to podcasts',
         'Reading in a cafe',
-        'Rewatching The Crown',
+        'Rewatching The Crown or Downton Abbey',
         'Planning my next adventure abroad'
     ]
 
