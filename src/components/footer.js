@@ -2,16 +2,16 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-    height: 20vh;
+    height: 10vh;
     // width: 120vw;
     // background-color: #0A5029;
     display: flex;
+    justify-content: center;
 `;
 
 const StyledCredit = styled.div`
     display: inline-block;
-    align-self: flex-end;
-    justify-self: center;
+    align-self: center;
 `
 
 const Footer = () => {
