@@ -4,7 +4,10 @@ import { socialMedia } from '../../config';
 import styled from "styled-components";
 
 const StyledContactSection = styled.section`
+    height: 90vh;
     display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
 
     ul {
@@ -18,9 +21,28 @@ const StyledContactSection = styled.section`
             margin-right: 35px;
         }
     }
+
+    .email-link {
+        // display: inline-block;
+        margin-top: 50px;
+        width: 6vw;
+        background: #F5F0E7;
+        border-radius: 4px;
+        border: 0.15em solid #0A5029;
+        padding: 1.5em 2em;
+        align-self: center;
+        text-align: center;
+        
+        :hover {
+            transition: all .4s ease;
+            background: #C4C3B3;
+        }
+    }
+
 `
 
 const StyledSocialLinks = styled.div`
+    margin-top: 50px;
 
 `
 
@@ -32,14 +54,14 @@ const Contact = () => {
             <p>Have a question, some feedback, a book or movie rec, or simply want to chat?</p>
 
             <a className='email-link' href={`mailto:${email}`}>
-                Get in Touch
+                Say Hello
             </a>
 
             <StyledSocialLinks>
                 <ul>
                     {socialMedia && socialMedia.map(({ name, url }, i) => (
                         <li key={i}>
-                            <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
+                            <a className='social-links' href={url} target="_blank" rel="noopener noreferrer">{name}</a>
                         </li>
                     ))}
                 </ul>

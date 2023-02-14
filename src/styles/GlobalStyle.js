@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         width: 100%;
         background-color: #F5F0E7;
+        scroll-behavior: smooth;
     }
 
     * {
@@ -17,12 +18,6 @@ const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
-        // color: inherit;
-        // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-        :hover {
-            color: #658F78;
-        }
     }
 
     ul {
@@ -37,6 +32,15 @@ const GlobalStyle = createGlobalStyle`
         font-size: clamp(15px, 3vw, 30px);
     }
 
+    .social-links  {
+        // color: inherit;
+        // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        :hover {
+            transition: all .4s ease;
+            color: #658F78;
+        }
+    }
 `;
 
 export default GlobalStyle;

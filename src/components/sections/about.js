@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledAboutSection = styled.section`
     max-width: 900px;
 
-    .inner {
+    .grid-content {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-gap: 50px;
@@ -14,6 +14,7 @@ const StyledAboutSection = styled.section`
             display: block;
         }
     }
+
 `;
 
 const StyledText = styled.div`
@@ -38,8 +39,8 @@ const About = () => {
         <StyledAboutSection id='about'>
             <h3 className='section-header'>Nice to meet you!</h3>
 
-            <div className='inner'>
-                <StyledText>
+            <div className='grid-content'>
+                <StyledText className='grid-item'>
                     <div>
                         <p>
                             I’m Jordan, a digital product designer from Toronto, Canada.
@@ -60,11 +61,11 @@ const About = () => {
                     </div>
 
                     <ul>
-                        {interests && interests.map((interest, i) => <li key={i}>{interest}</li>)}
+                        {interests && interests.map((interest, i) => <li key={i}>• {interest}</li>)}
                     </ul>
                 </StyledText>
 
-                <StyledPic>
+                <StyledPic className='grid-item'>
                     <div className='wrapper'>
                         <StaticImage
                             className='img'

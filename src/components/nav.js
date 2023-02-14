@@ -45,7 +45,7 @@ const StyledLinks = styled.div`
             margin: 0 5px;
             position: relative;
             display: inline;
-            font-size: min(1.1em, 20px);
+            font-size: min(1.1em, 20px); 
         }
 
         li:not(:last-child) {
@@ -55,6 +55,11 @@ const StyledLinks = styled.div`
         a {
             padding: 0.5vw;
             color: #0A5029;
+
+            :hover {
+                transition: all .4s ease;
+                color: #658F78;
+            }  
         }
     }
 `;
