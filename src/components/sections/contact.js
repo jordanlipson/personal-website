@@ -10,16 +10,9 @@ const StyledContactSection = styled.section`
     text-align: center;
     flex-direction: column;
 
-    ul {
-        padding: 0px;
-
-        li {
-            display: inline;
-        }
-
-        li:not(:last-child) {
-            margin-right: 35px;
-        }
+    @media (max-width: 768px) {
+        height: 100vh;
+        margin-top: 5em;
     }
 
     .email-link {
@@ -44,6 +37,34 @@ const StyledContactSection = styled.section`
 const StyledSocialLinks = styled.div`
     margin-top: 50px;
 
+    ul {
+        padding: 0px;
+
+        li {
+            display: inline;
+        }
+
+        li:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 4em;
+
+        ul {
+            justify-content: center;
+
+            li {
+                display: block;
+                padding: 1.5em;
+            }
+
+            li:not(:last-child) {
+                margin-right: 0px;
+            }
+        }
+    }
 `
 
 const Contact = () => {
@@ -61,7 +82,7 @@ const Contact = () => {
                 <ul>
                     {socialMedia && socialMedia.map(({ name, url }, i) => (
                         <li key={i}>
-                            <a className='social-links' href={url} target="_blank" rel="noopener noreferrer">{name}</a>
+                            <a className='social-links' href={url} target="_blank" rel="noopener noreferrer">{name} ↗</a>
                         </li>
                     ))}
                 </ul>

@@ -32,8 +32,10 @@ const StyledHeroSection = styled.section`
         margin-top: 7em;
     }
 
-    @media (max-height: 700px) and (min-width: 700px), (max-width: 768px) {
-        // height: auto;
+    @media (max-width: 768px) {
+        height: auto;
+        margin-top: 12em;
+        text-align: center;
 
         #description-header {
             margin-top: 4em;

@@ -7,6 +7,10 @@ const StyledFooter = styled.footer`
     // background-color: #0A5029;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        height: 5vh;
+    }
 `;
 
 const StyledCredit = styled.div`

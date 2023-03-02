@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { navLinks } from '../config'
+import { Menu } from '../components';
 
 const StyledHeader = styled.header`
     position: fixed;
@@ -11,7 +12,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     background-color: #F5F0E7;
     pointer-events: auto !important;
     user-select: auto !important;
@@ -32,6 +33,7 @@ const StyledNav = styled.nav`
 const StyledLinks = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     @media (max-width: 768px) {
         display: none;
@@ -49,7 +51,7 @@ const StyledLinks = styled.div`
         }
 
         li:not(:last-child) {
-            margin-right: 60px;
+            margin-right: 50px;
         }
 
         a {
@@ -74,18 +76,23 @@ const Nav = () => {
     return (
         <StyledHeader>
             <StyledNav>
-                <StyledLinks className='nav-links'>
-                    <ul>
-                        <li><Link to='/'>LIPSON.DESIGN</Link></li> {/** Replace with proper logo */}
-                        {navLinks &&
-                            navLinks.map(({ url, name }, i) => (
-                                <li key={i}>
-                                    <Link to={url}>{name}</Link>
-                                </li>
-                            ))}
-                        <li>{ResumeLink}</li>
-                    </ul>
-                </StyledLinks>
+                <>
+                    <StyledLinks className='nav-links'>
+                        <ul><li><Link to='/'>LIPSON.DESIGN</Link></li></ul>
+                        <ul>
+                            {/* <li><Link to='/'>LIPSON.DESIGN</Link></li> * Replace with proper logo */}
+                            {navLinks &&
+                                navLinks.map(({ url, name }, i) => (
+                                    <li key={i}>
+                                        <Link to={url}>{name}</Link>
+                                    </li>
+                                ))}
+                            <li>{ResumeLink}</li>
+                        </ul>
+                    </StyledLinks>
+
+                    <Menu />
+                </>
             </StyledNav>
         </StyledHeader>
     )

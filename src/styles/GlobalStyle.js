@@ -29,7 +29,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .section-header {
-        font-size: clamp(15px, 3vw, 30px);
+        // font-size: clamp(15px, 3vw, 30px);
+        font-size: clamp(1.5rem, 3vw, 30px); 
     }
 
     .social-links  {
