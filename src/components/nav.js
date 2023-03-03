@@ -17,9 +17,6 @@ const StyledHeader = styled.header`
     pointer-events: auto !important;
     user-select: auto !important;
 
-    @media (max-width: 1080px) {
-        padding: 2em 2em;
-    }
     @media (max-width: 768px) {
         padding: 0 25px;
     }
@@ -44,7 +41,7 @@ const StyledLinks = styled.div`
         margin: 0;
 
         li {
-            margin: 0 5px;
+            // margin: 0 5px;
             position: relative;
             display: inline;
             font-size: min(1.1em, 20px); 
