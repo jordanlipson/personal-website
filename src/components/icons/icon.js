@@ -1,15 +1,16 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-// import {
-//     IconGitHub,
-// } from '@components/icons';
+import {
+    IconInstagram,
+    IconLinkedin,
+} from '../icons';
 
 const Icon = ({ name }) => {
     switch (name) {
-        case 'GitHub':
-            return <IconGitHub />;
-        default:
-            return <IconExternal />;
+        case 'Instagram':
+            return <IconInstagram />;
+        case 'Linkedin':
+            return <IconLinkedin />;
     }
 };
 
