@@ -23,7 +23,7 @@ const Footer = () => {
         <StyledFooter>
             <StyledCredit>
                 <a href='https://github.com/jordanlipson/personal-website' target="_blank" rel="noopener noreferrer">
-                    <div>Designed &amp; Built by Jordan Lipson</div>
+                    <div className='social-links'>Designed &amp; Built by Jordan Lipson</div>
                 </a>
             </StyledCredit>
         </StyledFooter>
