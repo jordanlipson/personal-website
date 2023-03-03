@@ -34,7 +34,7 @@ const StyledHeroSection = styled.section`
 
     @media (max-width: 768px) {
         height: auto;
-        margin-top: 12em;
+        margin-top: 7em;
         text-align: center;
 
         #description-header {
@@ -48,6 +48,10 @@ const StyledHeroSection = styled.section`
         h2 {
             font-size: calc(30px + 30 * ((100vw - 600px) / 600));
         }
+    }
+
+    @media (max-width: 470px) {
+        margin-top: 13em;
     }
 `;
 
