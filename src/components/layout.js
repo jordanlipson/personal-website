@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-import { Nav, Footer } from './index'
+import { Head, Nav, Footer } from './index'
 import { GlobalStyle } from "../styles/index";
 
 const StyledContent = styled.div`
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            {/* <Head /> */}
+            <Head />
 
             <div id='root'>
                 <GlobalStyle />
