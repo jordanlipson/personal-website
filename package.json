@@ -1,6 +1,9 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
+  "engines": {
+    "node": "19.x"
+  },
   "private": true,
   "description": "personal-website",
   "author": "Jordan Lipson",
@@ -19,6 +22,7 @@
     "gatsby": "^5.5.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-react-helmet": "^6.7.0",
     "gatsby-plugin-sharp": "^5.5.0",
     "gatsby-plugin-styled-components": "^6.5.0",
