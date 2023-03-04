@@ -19,7 +19,6 @@ const Head = ({ title, description, pathname }) => {
         <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
             <html lang="en" />
 
-            <title>{seo.title}</title>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta property="url" content={seo.url} />
