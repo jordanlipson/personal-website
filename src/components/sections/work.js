@@ -76,18 +76,18 @@ const StyledProject = styled.div`
 const Work = () => {
     const projects = [
         {
-            name: 'AlloCanada',
-            description: '(In progress) CU Blueprint: Centralizing Services for Refugees',
-            url: 'https://jordanlipson.notion.site/Project-AlloCanada-a49a9c94a83a4f5cb95e3dc0672f9fe3',
-            imgName: 'allocanadapreview.png',
-            width: '90%',
+            name: 'Inner Garden',
+            description: 'UXL 2023 Design-a-thon Case Study',
+            url: 'https://jordanlipson.notion.site/Case-Study-Inner-Garden-d71a051c5e814eccbedf70f60cd424e5',
+            imgName: 'innergardenmockup.svg',
+            width: '40%',
         },
         {
-            name: 'Core',
-            description: '(UofT Hacks X 3rd Place Winner)',
-            url: 'https://jordanlipson.notion.site/Hackathon-Core-d71a051c5e814eccbedf70f60cd424e5',
-            imgName: 'corepreview2.png',
-            width: '30%',
+            name: 'Kynza',
+            description: 'Take Home Assignment',
+            url: 'https://jordanlipson.notion.site/Case-Study-Kynza-dfdc3681645e44278230ab8f6f737d89',
+            imgName: 'kynzatakehome.svg',
+            width: '50%',
         },
     ];
 
